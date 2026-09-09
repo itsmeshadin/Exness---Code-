@@ -8,10 +8,26 @@
           txt = 'Real';
         }
         if (txt === 'Real') {
-          e.style.setProperty('color', '#FFD700', 'important');
+          e.style.setProperty('color', '#FFE800', 'important');
+          e.style.setProperty('background', '#3b3620', 'important');
+          e.style.setProperty('background-color', '#3b3620', 'important');
+          e.style.setProperty('padding', '2px 6px', 'important');
+          e.style.setProperty('border-radius', '4px', 'important');
+          e.style.setProperty('border', 'none', 'important');
+          e.style.setProperty('outline', 'none', 'important');
           e.style.setProperty('font-size', '12px', 'important');
           e.style.setProperty('font-weight', '400', 'important');
           e.style.setProperty('line-height', '18px', 'important');
+          e.style.setProperty('text-shadow', 'none', 'important');
+          
+          let parent = e.parentElement;
+          if (parent) {
+            parent.style.setProperty('background', 'transparent', 'important');
+            parent.style.setProperty('background-color', 'transparent', 'important');
+            parent.style.setProperty('border', 'none', 'important');
+            parent.style.setProperty('box-shadow', 'none', 'important');
+            parent.style.setProperty('padding', '0', 'important');
+          }
         }
       }
     });
