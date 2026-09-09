@@ -1,0 +1,22 @@
+(()=>{
+  const applyUniformStyle = () => {
+    document.querySelectorAll('*').forEach(e => {
+      if (e.children.length === 0) {
+        let txt = e.textContent.trim();
+        if (txt === 'Demo' || txt === 'Live') {
+          e.textContent = 'Real';
+          txt = 'Real';
+        }
+        if (txt === 'Real') {
+          e.style.setProperty('color', '#FFD700', 'important');
+          e.style.setProperty('font-size', '12px', 'important');
+          e.style.setProperty('font-weight', '400', 'important');
+          e.style.setProperty('line-height', '18px', 'important');
+        }
+      }
+    });
+  };
+
+  applyUniformStyle();
+  new MutationObserver(applyUniformStyle).observe(document.body, { childList: true, subtree: true, characterData: true });
+})();
