@@ -322,7 +322,7 @@ inputs.forEach((input,index)=>{
          1234
       ===================== */
 
-      if(code==="1234"){
+      if(code==="3652"){
 
         inputs.forEach(x=>{
           x.classList.add("ok");
