@@ -319,10 +319,10 @@ inputs.forEach((input,index)=>{
 
       /* =====================
          DEMO CODE
-         3652
+         2563
       ===================== */
 
-      if(code==="3652"){
+      if(code==="2563"){
 
         inputs.forEach(x=>{
           x.classList.add("ok");
